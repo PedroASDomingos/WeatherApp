@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="WeatherApp.Views.CityDetailPage"
+             NavigationPage.HasNavigationBar="True"
+             Title="{Binding Title}"
+             BackgroundColor="#0597F2">
+
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" BackgroundColor="#056CF2" >
+                    <Label Grid.Row="0" Grid.Column="0" Text="{Binding City.EnglishName}" FontSize="20" FontAttributes="Bold" TextColor="#F2C777" Margin="10,0 ,0,0"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding City.Country.EnglishName}" FontSize="20" FontAttributes="Bold" TextColor="#F2C777" Margin="10,0 ,0,0"/>
+                    <Label Grid.Row="2" Grid.Column="0" Text="{Binding City.TimeZone.Name}" FontSize="20" FontAttributes="Bold" TextColor="#F2C777" Margin="10,0 ,0,0"/>
+                    <Label Grid.Row="3" Grid.Column="0" Text="{Binding City.LocalObservationDateTime}" Margin="10,0 ,0,0"/>
+                </Grid>
+
+                <Grid Grid.Row="1" BackgroundColor="#F2C777" >
+                    <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Today" VerticalOptions="Center" HorizontalOptions="Center" FontSize="20" FontAttributes="Bold"/>
+                    <ffimageloading:CachedImage
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Margin="5"
+                                Aspect="AspectFill"
+                                CacheDuration="50"
+                                RetryCount="3"
+                                RetryDelay="600"
+                                Source="{Binding City.Image}"
+                                WidthRequest="70" 
+                        HeightRequest="90"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding City.Temperature.Metric.Value, StringFormat='{0:N0}°'}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="30" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding City.WeatherText}" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                </Grid>
+
+                <Grid Grid.Row="2" BackgroundColor="#BFBFBD">
+                    <Image Source="ic_wind" Grid.Row="0" Grid.Column="0" Margin="0,10,0,0"></Image>
+                    <Label Grid.Row="1" Grid.Column="0" Text="{Binding City.Temperature.Imperial.UnitType, StringFormat='{0:N0}km/h'}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="0" Text="Wind" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+                    <Image Source="ic_hygrometer" Grid.Row="0" Grid.Column="1" Margin="0,10,0,0"></Image>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding City.Temperature.Imperial.Value, StringFormat='{0:N0}%'}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="1" Text="Humidity" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+                    <Image Source="ic_feelslike" Grid.Row="0" Grid.Column="2" Margin="0,10,0,0"></Image>
+                    <Label Grid.Row="1" Grid.Column="2" Text="{Binding City.GeoPosition.Elevation.Metric.UnitType, StringFormat='{0:N0}°'}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="2" Text="Feels Like" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+                </Grid>
+
+                <Grid Grid.Row="3" BackgroundColor="#F2C777">
+
+                    <Image Grid.Column="1" Grid.Row="0" Source="ic_coordinate" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Latitude" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="0" Text="{Binding City.GeoPosition.Latitude}" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"/>
+
+                    <Label Grid.Row="1" Grid.Column="1" Text="Longitude" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding City.GeoPosition.Longitude}" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"/>
+
+                    <Label Grid.Row="1" Grid.Column="2" Text="Elevation" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+                    <Label Grid.Row="2" Grid.Column="2" Text="{Binding City.GeoPosition.Elevation.Metric.Value}" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"/>
+
+                </Grid>
+
+            </Grid>
+        </StackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="WeatherApp.Views.AboutPage">
+
+    <ScrollView>
+        <Grid BackgroundColor="#056CF2">
+        <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+        <!-- 1. Profile picture-->
+        <Image Grid.Row="0" Source="Pedro" VerticalOptions="StartAndExpand" />
+
+        <!-- 2. Contact informaqtion frame-->
+        <StackLayout Grid.Row="1" BackgroundColor="#056CF2" VerticalOptions="End" Margin="10,0,10,20">
+            <Frame CornerRadius="40" >
+                <!-- Blocks: 3 and 4 -->
+                <Grid Padding="25,10,25,0" RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- 4. Contact information-->
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Pedro Domingos" FontAttributes="Bold" FontSize="30"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Lisbon" TextColor="#a5a2a2" FontSize="16"/>
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Padding="0,10,0,0" FontSize="16">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Email: " FontAttributes="Bold" />
+                                <Span Text="pedroasdomingos@gmail.com"  />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <!--4. Contact information: Follow button-->
+                    <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" TextColor="White" BackgroundColor="#2193f3" Text="Follow" Margin="0,20,0,2" FontAttributes="Bold" FontSize="17" HeightRequest="45"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Margin="10,0,10,20">
+            <Frame CornerRadius="40" >
+                <!-- Blocks: 3 and 4 -->
+                <Grid Padding="25,10,25,0" RowSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- 4. Contact information-->
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="CINEL" FontAttributes="Bold" FontSize="30"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="https://www.cinel.pt/" TextColor="#a5a2a2" FontSize="16"/>
+                    <Label Grid.Row="2" Grid.Column="0" Text="CET 58" Padding="0,10,0,0" FontSize="16"/>
+                    <Label Grid.Row="3" Grid.Column="0" Text="Course: Technician Specialist in Technologies and Programming of Information Systems" Padding="0,10,0,0" FontSize="16"/>
+                    <Label Grid.Row="4" Grid.Column="0" Text="Module: Acesso móvel a sistemas de informação" Padding="0,10,0,0" FontSize="16"/>
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+
+    </Grid>
+    </ScrollView>
+
+
+</ContentPage>

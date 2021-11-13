@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- PAGE TITLE -->
+    <title>Weather APP | @ViewData["Title"]</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- ALL GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,500,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="~/assets/fonts/line-awesome-font-awesome.min.css">
+    <!-- OWL CAROSEL CSS -->
+    <link rel="stylesheet" href="~/assets/owlcarousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/owlcarousel/css/owl.theme.css">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="~/assets/css/magnific-popup.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="~/assets/css/animate.min.css">
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="~/assets/css/venobox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <!-- color STYLE CSS -->
+    <link rel="stylesheet" href="~/assets/css/color-switcher.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="~/assets/css/responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="~/assets/css/media-queries.css">
+
+
+    <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+
+    <!-- Syncfusion Essential JS 2 Scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- START PRELOADER AREA-->
+    <div class="preloader-area">
+        <div class="spinner">
+            <i class="fa fa-sun-o" aria-hidden="true"></i>
+            <h2>WeatherAPP</h2>
+        </div>
+    </div>
+    <!-- END PRELOADER AREA -->
+    <!-- START SCROOL UP DESIGN AREA -->
+    <div class="scroll-to-up">
+        <div class="scrollup">
+            <span class="fa fa-chevron-up"></span>
+        </div>
+    </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
+    <!-- top start here -->
+    <div id="top">
+        <div class="container">
+            <div id="top-links" class="nav">
+                <ul class="list-inline inline-2 mr-auto">
+                    <li>
+                        <a href="#">Welcome to Weather APP</a>
+                    </li>
+                </ul>
+                <ul class="list-inline pull-right button login-reg ml-auto">
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+        <li class=" dropdown">
+            <a href="#" class="nav-link text-dark dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@this.User.Identity.Name <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a asp-area="" asp-controller="Account" asp-action="ChangeUser"><i class="fa fa-user" aria-hidden="true"></i>Update profile</a></li>
+                <li><a asp-area="" asp-controller="Account" asp-action="Logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+            </ul>
+        </li> }
+                    else
+                    {
+        <li class="nav-item">
+            <a asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+            <span>&nbsp;/</span>
+            <a asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+        </li>}
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- top end here -->
+    <!-- header start here-->
+    <!-- header end here -->
+    <!-- menu start here -->
+    <div id="menu" class="default-bg" style="background: #2980b9;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xs-12 responsive_padding_btm">
+                    <nav class="navbar navbar-expand-md">
+
+                        <div class="collapse navbar-collapse navbar-ex1-collapse padd0" id="collapse-mainmenu">
+                            <ul class="nav navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-area="" asp-controller="Home" asp-action="Contacts">Contact</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu end here -->
+    <!-- slider start here -->
+    <!-- places start here -->
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="footer-area">
+        <div class="container footer-widgets">
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-text left-align">
+                            <h6>copyright &copy; Weather APP. all rights Reserved</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-align">
+                        <ul class="footer-social">
+                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / END CONTACT DETAILS DESIGN AREA -->
+    <!-- LATEST JQUERY -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!--<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="~/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- OWL CAROUSEL JS  -->
+    <script src="~/assets/owlcarousel/js/owl.carousel.mini.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- STEALLER JS -->
+    <script src="~/assets/js/jquery.stellar.min.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="~/assets/js/isotope.min.js"></script>
+    <!--Image Loded JS-->
+    <script src="~/assets/js/images-loded.min.js"></script>
+    <!-- WOW JS -->
+    <script src="~/assets/js/wow.min.js"></script>
+    <!-- CONTCAT FORM JS -->
+    <script src="~/assets/js/venobox.min.js"></script>
+    <script src="~/assets/js/form-contact.js"></script>
+    <script src="~/assets/js/venobox.min.js"></script>
+    <!-- scripts js -->
+    <script src="~/assets/js/scripts.js"></script>
+    <!--<script src="~/js/site.js" asp-append-version="true"></script>-->
+    <!-- Syncfusion Essential JS 2 ScriptManager -->
+    <ejs-scripts></ejs-scripts>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

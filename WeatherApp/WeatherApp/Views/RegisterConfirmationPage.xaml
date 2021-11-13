@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="WeatherApp.Views.RegisterConfirmationPage"
+             Title="User created">
+
+    <Grid BackgroundColor="#056CF2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" VerticalOptions="StartAndExpand">
+        <Image HeightRequest="300"  Source="https://img.icons8.com/clouds/100/000000/handshake.png" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" />
+        </Grid>
+        <!-- 2. Contact informaqtion frame-->
+
+        <Grid Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            <Label FontSize="Large"  Text="User created successfully"></Label>
+        </Grid>
+
+        <Grid Grid.Row="2" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            <Button Command="{Binding GoToLoginCommand}" CornerRadius="30" HorizontalOptions="FillAndExpand" Text="Go to Login"></Button>
+
+            
+        </Grid>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,489 @@
+a.button{
+    color: #8ec211;
+    border: 1px solid #8ec211;
+}
+a.button:hover, .shop-cart-body .shop-cart4 .upload-cart, .shop-cart-body .shop-cart4 .shipping button , .shop-cart-body .shop-cart4 .cart-totals button, .shop-checkout-body #payment .place-order input{
+    background: #8ec211;
+    border: 1px solid #8ec211;
+}
+li.product a, .section-onsale-product .onsale-product a, .section-onsale-product-carousel .onsale-product-carousel .onsale-product .onsale-product-content a, .products-carousel .owl-item .product a {
+    color: #8ec211;
+}
+.shop-cart-body .shop-cart4 .shipping button:hover {
+    border: 1px solid #8ec211;
+    color:  #8ec211;
+}
+.shop-cart-body .shop-cart4 .sub-cart .coupon-code button:hover {
+    border: 1px solid  #8ec211;
+    color: #8ec211;
+}
+.has-discount .price {
+     color: #8ec211;
+}
+.login-form input[type='submit'] {
+    background-color:  #8ec211;
+    border: 1px solid   #8ec211;
+}
+a.btn:hover {
+    background-color: #8ec211;
+}
+.mixitup-gallery .filters li.active, .mixitup-gallery .filters li:hover {
+    background-color: #8ec211;
+    border-color: #8ec211;
+}
+.testimonials-slider .testimonial-author .job {
+      color: #8ec211;
+}
+.contact_us {
+    background-color:   #8ec211;
+}
+.contact_us .news_letter>input {
+     background:  #8ec211;
+} 
+a.
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a>img {
+    color: #8ec211;
+}
+.shop-checkout-body .entry-content-wrapper .woocommerce-info a {
+    color: #8ec211;
+}
+.shop-checkout-body .entry-content-wrapper .woocommerce-info i {
+    color: #8ec211;
+}
+.shop-checkout-body .entry-content-wrapper .woocommerce-info {
+    border-top: 2px solid #8ec211;
+}
+.about-feature i {
+    color: #8ec211;
+}
+.product_list_widget .product-title{
+    color: #8ec211;
+}
+.owl-carousel .owl-nav button.owl-prev {  
+    border: 1px solid #8ec211;
+    color: #8ec211;
+}
+.owl-carousel .owl-nav button.owl-next {  
+    border: 1px solid #8ec211;
+    color: #8ec211;
+}
+.owl-carousel .owl-dot.active{
+    background-color: #8ec211;
+}
+.products-carousel .owl-item .product a {
+    color: #8ec211;
+}
+.style_btn span.left_ico{
+    background: #668d0c;
+}
+.products-carousel-tabs .nav-link.active{
+    color: #8ec211;
+} 
+.tp-caption a.index3-btn {
+    background: #8ec211;
+    border: 1px solid #8ec211;
+}  
+.tp-caption a.index3-btn:hover {
+    color:#8ec211;
+}  
+.contact-form input[type='submit']:hover{
+    background-color: #fff;
+    color: #8ec211;
+}
+
+.tab-search-default .tab-btn-wrapper .tab-btn:focus {
+    background-color: #8ec211;
+}
+
+.product_list_widget a{
+    color: #8ec211;
+}
+
+.cat_cars .list-group-item:hover .badge{
+    color: #8ec211;
+}
+
+
+.inline ul li.active ins{
+    color: #8ec211;
+}
+.owl-carousel .owl-controls .owl-page.active span {
+    background: #8ec211;
+}
+.blog-section .site-page-breadcrumb span{
+    color: #8ec211;
+}
+.default-bg{
+    background: #8ec211;
+}
+.book-sec .book_btn span{
+    background-color: #8ec211;
+    color: #fff;
+    transition: .5s;
+    padding: 10px 15px;
+    border:1px solid #8ec211;
+}
+.book-sec .book_btn span:hover a{
+    color: #8ec211;
+}
+.inline ul li:hover ins{
+    color: #8ec211;
+}
+.selector span.custom-select:before{
+    background: #8ec211;
+}
+.title-separator-outer {
+    color: #8ec211;
+}
+.Default-clr{
+    color: #8ec211;
+}
+.Default-clr-hvr:hover{
+    color: #8ec211;
+}
+.rbutton {
+    background: #8ec211 none repeat scroll 0 0;
+}
+.transparent{
+    border:1px solid #8ec211;
+    color: #8ec211;
+    background: transparent;
+}
+.bg-primary, button, input[type="button"].button , .activity-tabs .nav-tabs>li>a , .coming-soon-section, .error-page::before, .myaccount .nav-item, .shop-cart-body .shop-cart4 .sub-cart .coupon-code button, .circlewrap span, .header2-btns a.button{
+        background-color: #8ec211;
+}
+a.read-more {
+    
+    border: 1px solid #8ec211;
+   
+    background: #8ec211;
+}
+.scrollup {
+    
+    background: #8ec211;
+}
+.review-rating label .fa{
+    color: #8ec211;
+   
+}
+.header-text2 .go span{
+    background-color: rgba(142, 194, 17, 0.51);
+    padding: 25px 10px;
+    border:2px solid #8ec211 ;
+}
+
+.spinner i  , .five-stars-container .five-stars:before, .five-stars-container.editable-rating .ui-slider-range:before, .coming-soon-section .wrapper .social li a , .profile-details .content-profile .info p.title, .wish-list .wish-listitem h3, .booking-details .booking-detail h3, .booking-details .booking-detail .detail-info p, .cars-title, .mainmenu .navbar-nav li .dropdown-menu a:hover ,.mainmenu .navbar-nav li.active .dropdown-menu a, .shop-cart-body .shop-cart4 tr td .del a, .shop-checkout-body .checkout-order-left .order-total, .shop-checkout-body #payment ul li a, .shop-checkout-body .checkout-billing-left p .required,  .product-thumb .caption .inner i, .product-thumb .caption .inner span.fa-map-marker, .gallery-items-5-2 .product-thumb .caption button:hover, .product-thumb:hover .caption button  {
+    color: #8ec211;
+    
+}
+.header-text h1 span {
+    color: #8ec211;
+}
+.header-search-form-area input[type="submit"] {
+    background: #8ec211;
+   
+}
+.mainmenu .navbar-nav li.active a{
+    
+    color: #8ec211;
+    
+}
+.mainmenu .navbar-nav li a:hover {
+   
+    color: #8ec211;
+   
+}
+.menu-bg .mainmenu .navbar-nav li a:hover {
+    color: #8ec211;
+}
+
+.header-text a {
+    
+    border: 1px solid #8ec211;
+    
+    background: #8ec211;
+}
+.header_top .pull-right a:hover {
+    color: #8ec211;
+}
+input[type="submit"].button{
+    
+    border: 1px solid #8ec211;
+  
+    background: #8ec211;
+    
+}
+
+input[type="submit"].button:hover {
+    
+    border: 1px solid #8ec211;
+    
+}
+.single-place h4 {
+   
+    color: #8ec211;
+}
+.owl-theme .owl-controls .owl-buttons div {
+  
+    color: #8ec211;
+    
+    border: #8ec211 2px solid;
+ }   
+.aboutfeature li i{
+    color: #8ec211;
+}
+.single-service:hover .service-icon i{
+    color: #8ec211; 
+}
+.video-area-text i {
+   
+    color: #8ec211;
+   
+}
+.call-to-area-text a {
+   
+    border: 1px solid #8ec211;
+   
+    background: #8ec211;
+   
+}
+
+.call-to-area-text a:hover {
+    color: #8ec211;
+    
+}
+.overlay-offer .button {
+    background: #8ec211 none repeat scroll 0 0;
+  
+   
+   
+}
+.field-icon [class*="fa-"], .field-icon i {
+   
+    color: #8ec211;
+}
+.hotel-menu button.active,
+.hotel-menu button:hover {
+    
+    color: #8ec211
+}
+.flight-details .flight-title{
+   
+    color: #8ec211;
+}
+
+.flight-details .flight-offer span , .flight-details .fair span{
+    color:  #8ec211;
+}
+.tour-cost{
+   
+    color: #8ec211;
+   
+}
+.cruise-review .checked{
+    color: #8ec211;
+}
+input[type='range']::-webkit-slider-thumb:hover {
+  
+  border: 1px solid #8ec211;
+  background: #8ec211;
+ 
+}
+.sidebar-category a:hover {
+    color: #8ec211;
+}
+.widget-tags li a:hover{
+   
+    background:#8ec211;
+  
+}
+.pagination li a:hover{
+    background: #8ec211;
+    color: #fff;
+}
+.review-details .client-id{
+   
+    color: #8ec211;
+}
+.blog-heading{
+    
+    color: #8ec211;
+   
+  }
+  .post-meta span i{
+    
+    color: #8ec211;
+  }
+  .author-social li a{
+    border: 1px solid #8ec211;
+    color: #8ec211;
+  
+}
+.author-social li a:hover{
+    border: 1px solid #8ec211;
+    background: #8ec211;
+}
+.commentreply{
+   
+    background-color:#8ec211;
+  
+}
+.comment-date{
+    color: #8ec211;
+   
+}
+.offer-listtitle{
+  
+    color: #8ec211;
+}
+.offer-list li span{
+    color: #8ec211;
+}
+.content-left{
+    
+    color: #8ec211;
+    
+}
+.content-right{
+   
+    color: #8ec211;
+   
+}
+.form-control:focus {
+    border-color: #8ec211;
+  
+}
+
+.contact-form input[type='submit'] {
+   
+    border: 1px solid #8ec211;
+    background-color: #8ec211;
+    
+}
+
+.contact-form input[type='submit']:hover {
+    
+    border: 1px solid #8ec211;
+   
+}
+.footer-bottom {
+    background: #8ec211;
+   
+}
+footer .widget ul i{
+    
+    color: #8ec211;
+    
+}
+.formnewsletter button {
+    background: #8ec211 none repeat scroll 0 0;
+   
+}
+.lineStart>.col-lg-6:first-of-type:after, .lineStart>.col-md-6:first-of-type:after, .lineStart>.col-sm-6:first-of-type:after, .lineContinue>.col-lg-6:first-of-type:after, .lineContinue>.col-md-6:first-of-type:after, .lineContinue>.col-sm-6:first-of-type:after, .lineEnd>.col-lg-6:first-of-type:after, .lineEnd>.col-md-6:first-of-type:after, .lineEnd>.col-sm-6:first-of-type:after{
+    background: #8ec211;
+}
+ 
+.color-box{
+    background: #8ec211;
+    } 
+ .gallery-menu button.active, .gallery-menu button:hover {
+    background-color: transparent;
+    color: #8ec211;
+}
+.tour2-cost {
+    color: #8ec211;
+}
+header .button-login .btn-default{
+    background:#8ec211;
+}
+header .button-login .btn-default:active:hover{
+    color: #fff;
+    background:#8ec211;
+}
+
+
+#menu .navbar-nav > .active > a, #menu .navbar-nav > .active > a:hover, #menu .navbar-nav > .active > a:focus, #menu1 .navbar-nav > .active > a, #menu1 .navbar-nav > .active > a:hover, #menu .navbar-nav > .active > a:focus {
+    color: #8ec211;
+    background-color: #8ec211;
+}
+#menu .dropdown-menu li a:hover, #menu1 .dropdown-menu li a:hover{
+    color:#8ec211;
+    
+}
+.slide-detail form .calender i, .slide-detail form .btn i{
+    background:#8ec211;
+    
+}
+
+.slide-detail form .btn-primary{
+    background:#8ec211;
+  
+}
+.places p:after {
+    border-top: 5px solid #8ec211;
+    
+}
+.places .nav-tabs > li > a:hover:after, .places .nav-tabs > li.active > a:after{
+    border-bottom: 8px solid #8ec211;
+  
+}
+.places .nav-tabs > li > a:hover:before, .places .nav-tabs > li.active > a:before{
+    border-bottom: 10px solid #8ec211;
+   
+}
+.news .product-thumb .image .matter button {
+    background:#8ec211;
+   
+}
+.subscribe .btn-default{
+    background:#8ec211;
+   
+}
+.gallery-items-5-2 .product-thumb .caption button:hover{
+    color:#8ec211;
+}
+.tab-search-default .active .tab-btn {
+    background: #8ec211;
+    color: #fff;
+}
+.find-widget .text-box-wrapper .tb-icon{
+    color: #8ec211;
+}
+.btn-slide {
+    border: 1px solid #8ec211;
+    background-color: #8ec211;
+}
+.formnewsletter2 button {
+    background: #8ec211 none repeat scroll 0 0;
+    }
+.feature-block .feature i {
+    color: #8ec211;
+}
+.ad .ad-action > a {
+    color: #8ec211;
+}
+li.product .price ins, .section-onsale-product .onsale-product .price ins, .section-onsale-product-carousel .onsale-product-carousel .onsale-product .onsale-product-content .price ins, .products-carousel .owl-item .product .price ins {
+    color: #8ec211;
+}
+.star-rating span:before {
+    color: #8ec211;
+}
+.message-box {
+    background: #8ec211;
+    padding: 15px;
+}
+.site-footer .widget .contactinfo span.fa {
+    color: #8ec211;
+}
+.site-footer .widget .address span.fa {
+    color: #8ec211;
+}
+.site-footer .widget .timing span.fa {
+    color: #8ec211;
+}
+.social-h3 li a:hover{
+    color: #8ec211;
+}
+.site-footer .widget .social-links li a:hover i{
+    color: #8ec211;
+}

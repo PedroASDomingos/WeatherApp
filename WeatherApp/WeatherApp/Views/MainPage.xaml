@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:vm="clr-namespace:WeatherApp.ViewModels"
+             x:Class="WeatherApp.Views.MainPage"
+             BackgroundColor="Black"
+              NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <MediaElement x:Name="BgVideo" Source="ms-appx:///event.mp4" ShowsPlaybackControls="False" 
+                      IsLooping="True" Aspect="AspectFill" AutoPlay="true"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></MediaElement>
+
+
+
+        <StackLayout Orientation="Vertical" 
+             Spacing="20" 
+             HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Center"
+             HeightRequest="300">
+            <CarouselView ItemsSource="{Binding Onboardings}" IndicatorView="LandingIndicator" VerticalOptions="End">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+
+                        <StackLayout Spacing="10">
+
+
+                            <Label Text="{Binding Heading}" TextColor="#0583F2" FontSize="35" FontAttributes="Bold" WidthRequest="220" HorizontalOptions="CenterAndExpand"></Label>
+                            <Label Text="{Binding Caption}" TextColor="#F2C777" FontSize="26" WidthRequest="250" HorizontalOptions="CenterAndExpand"></Label>
+                        </StackLayout>
+
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="LandingIndicator" Grid.Row="1" IndicatorsShape="Circle" IndicatorColor="#BFBFBD" SelectedIndicatorColor="#F2C777" />
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End" HorizontalOptions="FillAndExpand" Padding="20" Margin="10" Spacing="10">
+
+            <Button Text="SIGN IN" Clicked="ButtonSignin_Clicked" BackgroundColor="#BFBFBD" TextColor="White" CornerRadius="30" />
+            <Button Text="REGISTER" Clicked="ButtonRegister_Clicked"  BackgroundColor="#F2C777" TextColor="White" CornerRadius="30"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

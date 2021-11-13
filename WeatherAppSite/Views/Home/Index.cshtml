@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    <div class="placetop">
+        <div class="container">
+            <h2 class="blog-heading"><i class="fa fa-smile-o" aria-hidden="true"></i>&nbsp; Welcome</h2>
+            <hr />
+            <section id="aboutus" class="about-area section-padding abut">
+                <div class="container">
+                    <div class="text-center">
+                        <img width="300" src="~/images/logo.png" />
+                        <h3>Congratulations! you can now access our APP</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+}
+else
+{
+    <div class="placetop">
+        <div class="container">
+            <h2 class="blog-heading"><i class="fa fa-smile-o" aria-hidden="true"></i>Welcome</h2>
+            <hr />
+            <section id="aboutus" class="about-area section-padding abut">
+                <div class="container">
+                    <div class="text-center">
+                        <img width="300" src="~/images/logo.png" />
+                        <h3>Please register to continue using the Weather app on your mobile!</h3>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+}

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="WeatherApp.Views.RegisterPage"
+             Title="{Binding Title}">
+
+    <Grid>
+        <MediaElement x:Name="BgVideo" Source="ms-appx:///event.mp4" ShowsPlaybackControls="False" 
+                      IsLooping="True" Aspect="AspectFill" AutoPlay="true"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></MediaElement>
+        
+        <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center"
+             Spacing="20" 
+             HorizontalOptions="Fill"
+>
+            <Frame  BackgroundColor="White"  HasShadow="True" Padding="0" Margin="20,0,20,40">
+
+                <StackLayout>
+
+                    <StackLayout Margin="10">
+                        <Label Text="REGISTER" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                    <StackLayout Padding="0" Margin="15,10">
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry Placeholder="Email" Text="{Binding Email}" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="10,0,10,0"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="10,0,10,0"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry Placeholder="Confirm Password" IsPassword="True" Text="{Binding Confirm}" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="10,0,10,0"/>
+                            </StackLayout>
+                        </Frame>
+                        <StackLayout  Orientation="Horizontal" Margin="0,15,0,15">
+                            <Button Text="Register" Command="{Binding RegisterCommand}" BackgroundColor="Purple" TextColor="White" CornerRadius="30" HorizontalOptions="FillAndExpand"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                    
+                </StackLayout>
+            </Frame>
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>
